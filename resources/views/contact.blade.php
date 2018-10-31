@@ -16,7 +16,7 @@
 
                     Your contact page
                         @foreach ($users as $user)
-                            <p>This is user {{ $user->name }}</p>
+                            <p>This is user {{ $user->name ."   e-mail:   ". $user->email}}</p>
                         @endforeach
 
                 </div>
