@@ -17,5 +17,6 @@ class UserTest extends TestCase
     {
         $user = User::find(1);
         $this->assertInternalType('int',$user->id);
+        $this->assertInstanceOf('App\User',$user);
     }
 }
