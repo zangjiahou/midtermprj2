@@ -13,7 +13,7 @@ class CarMakeTest extends TestCase
     public function testCarMake()
     {
         $car = Car::find(1);
-        $car_make=$car->Make;
+        $car_make=$car->make;
         $this->assertContains($car_make, ['ford', 'honda', 'toyota']);
     }
 
